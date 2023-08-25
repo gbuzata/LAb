@@ -1,0 +1,97 @@
+n1= float(input("Digite o primeiro número: "))
+n2= float(input("Digite o segundo número: "))
+
+soma= n1 + n2
+subtracao1= n1 - n2 
+subtracao2= n2 - n1
+divisao= n1 / n2
+somaDobro= (n1*2) + (n2/2)
+
+print("A soma dos dois números é: ", soma, "\nA subtração do primeiro pelo segundo é: ", subtracao1, "\nA subtração do segundo pelo primerio é: ", subtracao2, )
+
+print("A divisão do primerio pelo segundo é: ",divisao, "\nA soma do dobro do primeiro, com metade do segundo é: ", somaDobro )
+
+################ EXERCICIO 1 ########################
+
+tempCelsius= float(input("Digite a temperatura em graus Celsius: "))
+
+tempFah= (tempCelsius * 1.8) + 32
+
+print("A temperatura equivalente em Fahrenheit é: ", tempFah)
+
+########### EXERCICIO 2 ########### 
+
+senha= str(input("Digite sua senha de maneira correta: ")).upper()
+
+if senha == "QWEASD" :
+    print("Acesso liberado")
+
+else :
+    print("Acesso negado")
+
+    ############## EXERCICIO 3 ######### 
+
+    numBase= float(input("Digite um número: "))
+
+if numBase > 20:
+    print("O valor digitado é acima de 20, por isso será somado 8, totalizando: ", numBase + 8)
+
+else :
+    print("O valor digitado é abaixo de 20, por isso será subtraído 5, totalizando: ", numBase - 5)
+
+    ######## EXERCICIO 4 ######## 
+    numCavalos= int(input("De quantos cavalos serão trocadas as ferraduras? "))
+
+valorFerradura= 80
+
+valorTotal= numCavalos * valorFerradura
+
+if valorTotal > 1000:
+    print("O valor total do orçamento é R$", valorTotal,".")
+
+else :
+    print("O valor total é de R$", valorTotal, ",com isso está liberada a compra. ")
+
+    ######### EXERCICIO 5 ###########
+
+    nasc= int(input("Ano de nascimento:"))
+anoAtual= 2023
+
+if anoAtual-nasc >= 16:
+    print("Apto para votar")
+else:
+    print("Inapto")
+
+    ########## EXERCICIO 6 ###########
+
+    nomeProduto= str(input("Digite o nome do produto: "))
+
+precoCusto= float(input("Qual o preço de custo deste produto? "))
+
+precoFinal= (precoCusto * 0.65) + precoCusto
+
+print("O valor final do produto será de R$:", precoFinal)
+
+######## EXERCICIO 7 ###########
+
+numMeloes= int(input("Quantidade de melões que você deseja comprar: "))
+
+print("O custo total dos melões para você, será de:", numMeloes * 4.25)
+
+########## EXERCICIO 8 ########## 
+
+valorNaBomba= float(input("Digite o valor pela gasolina: "))
+
+print("O valor referente à Distribuição e Revenda desse combustível, é de: ", valorNaBomba * 0.17)
+
+print("O valor referente ao Etanol Anidro contido, é de: ", valorNaBomba * 0.12)
+
+print("O valor de ICMS desse combustível, é de: ", valorNaBomba * 0.28)
+
+print("O valor referente à CIDE,PIS/PASEP e COFINS, é de: ", valorNaBomba * 0.07)
+
+print("O valor do combustível na refinaria, é de: ", valorNaBomba * 0.36)
+
+print("Em resumo, dois terços do valor do combustível, são impostos e custos operacionais do combustível.")
+
+######### EXERCICIO 9 ######### 
