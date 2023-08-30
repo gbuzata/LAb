@@ -1,0 +1,26 @@
+precoFab = float(input("Qual o custo de fabricação dessa peça? "))
+
+print("O valor final de venda da peça de roupa será de R$ ", (precoFab * 0.3) + precoFab)
+
+############## ATIVIDADE 1 ############### 
+
+num= float(input("Digite um número: "))
+
+print("O dobro do número digitado é:", num * 2)
+print("A metade do número digitado é:", num / 2)
+
+############## ATIVIDADE 2 ################
+
+anoNasc= int (input("Qual o ano de nascimento dessa pessoa? "))
+
+print("A pessoa terminará o ano de 2023 com ", (2023 - anoNasc), "anos")
+
+############### ATIVIDADE 3 #################
+
+numCarros= int (input("Digite o número de carros da frota:"))
+
+custoPorCarro= 1581.6
+
+print("O custo total para a troca dos pneus de toda a frota será de R$", (custoPorCarro * numCarros))
+
+############# ATIVIDADE 4 #################   
