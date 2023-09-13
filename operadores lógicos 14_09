@@ -1,0 +1,69 @@
+lado1= float(input("Digite o valor do lado 1, do triângulo:"))
+lado2= float(input("Digite o valor do lado 2, do triângulo:"))
+lado3= float(input("Digite o valor do lado 3, do triângulo:"))
+
+if lado1 == lado2 == lado3 :
+    print("Esse é um triângulo Equilátero")
+
+elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+    print("Esse é um triângulo Isósceles")
+
+elif lado1 != lado2 != lado3:
+    print("Esse é um triângulo Escaleno")
+
+
+##############W########## ATIVIDADE TRIANGULO ####################
+
+nome= str(input("Quem é o funcionário? "))
+salario= float(input("Quanto é o salário desse funcionário? "))
+tempServ= int(input("Há quanto tempo o funcionário trabalha na empresa? "))
+
+
+
+if salario > 2000 and tempServ >= 5:
+    print("O funcionário terá um aumento de 10% no salário, e seu novo salário é de R$", (salario * 0.1) + salario)
+
+else:
+    print("O funcionário tem direito a um aumento de 5%, e seu novo salário é de R$", (salario * 0.05) + salario)
+
+########## SALARIO #######
+
+nota1= float(input("Digite a nota da primeira prova: "))
+nota2= float(input("Digite a nota da segunda prova: "))
+
+notaFinal= (nota1 + nota2) / 2
+
+if 9.0 <= notaFinal <= 10.0:
+    print(" As notas do aluno foram", nota1 ,"e", nota2,", sua média final é ", notaFinal, "seu conceito é A, e o aluno está APROVADO!" )
+
+elif 7.5<= notaFinal < 9.0:
+    print("As notas do aluno foram", nota1, "e", nota2,", sua média final é", notaFinal,"seu conceito é B, e o aluno está APROVADO!")
+
+elif 6.0 <= notaFinal < 7.5:
+    print("As notas do aluno foram",nota1,"e",nota2,",sua média final é ",notaFinal," seu conceito é C, e o aluno está APROVADO!")
+
+elif 4.0<= notaFinal < 6.0:
+    print("As notas do aluno foram",nota1, "e", nota2,", sua média final é ",notaFinal,",seu conceito é D, e o aluno está REPROVADO!")
+
+elif 0 <= notaFinal <4.0:
+    print("As notas do aluno foram", nota1,"e", nota2,", sua média final é", notaFinal,", seu conceito é E, e o aluno está REPROVADO!")
+
+##### CONCEITO ######
+
+nota1= float(input("Digite a primeira nota: "))
+nota2= float(input("Digite a segunda nota: "))
+freq= int(input("Qual foi a frequência do aluno? "))
+
+notaFinal= (nota1 + nota2)/ 2
+
+if notaFinal >= 7.0 and freq >= 75:
+    print("Aluno aprovado")
+
+elif 7.0 > notaFinal >= 4.0 and freq > 75:
+    print("Aluno em exame final")
+
+elif notaFinal < 4.0 or freq < 75:
+    print("Aluno reprovado")
+
+###### ALUNO APROVADO #########
+
