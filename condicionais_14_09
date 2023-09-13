@@ -1,0 +1,94 @@
+num1= float(input("Digite um número:"))
+num2= float(input("Digite outro número:"))
+
+if num1 > num2:
+    print("O primeiro número digitado é o maior", num1)
+    print("O segundo número digitado é o menor", num2)
+
+elif num2 > num1:
+    print("O segundo número é o maior", num2)
+    print("O primeiro número é o menor", num1)
+
+elif num1 == num2:
+    print("Os dois números são iguais")
+
+      ##### NÚMERO MAIOR #####
+
+n1= float(input("Digite um número:"))
+
+n2= float(input("Digite outro número:"))
+
+calc= int(input("O que deseja fazer com os números? Digite 1 para soma, 2 para subtrair o primeiro pelo segundo, 3 para multiplicação, 4 dividir o primeiro pelo segundo:"))
+
+if calc == 1:
+    print("A soma dos números é:", n1 + n2)
+
+elif calc == 2 :
+    print("A subtração do primeiro pelo segundo é:", n1 - n2)
+
+elif calc == 3:
+    print("A multiplicação deles é: ", n1 * n2)
+
+elif calc == 4:
+     print("A divisão do primeiro pelo segundo é:", n1 / n2 )
+
+else:
+    print("Opção Inexistente.")
+  ###### OPÇÕES DE CALCULO #####
+
+  tipoHab= str(input("Qual(is) categoria(s) de CNH você possui?")).upper()
+
+if tipoHab == 'A':
+    print("Você pode dirigir motos e triciclos.")
+
+elif tipoHab == 'B':
+    print("Você pode dirigir carros de passeio")
+
+elif tipoHab == 'C':
+    print("Você pode dirigir veículos de carga acima de 3,5 ton.")
+
+elif tipoHab == 'D':
+    print("Você pode dirigir veículos com mais de 8 passageiros.")
+
+elif tipoHab == 'E':
+    print("Você pode dirigir veículos com unidade acoplada acima de 6 ton.")
+
+else:
+    print("Tipo de CNH inexistente.")
+  #### CNH #####
+
+  valorPeca= float(input("Qual o valor da peça?"))
+pagamento= int(input("Como você deseja fazer o pagamento? Temos três opções: Digite 1 para pagamento à vista, 2 para parcelar em 2 vezes, e 3 para parcelar em 3 vezes"))
+
+if pagamento == 1:
+    print("Pagamento à vista, valor total R$ ", valorPeca)
+
+elif pagamento == 2:
+    print("Você escolheu parcelar em 2 vezes, cada parcela terá o valor de R$", valorPeca / 2)
+
+elif pagamento == 3:
+    print("Você escolheu parcelar em 3 vezes, cada parcela terá o valor de R$", valorPeca/3)
+
+elif pagamento >= 4:
+    print("Opção inexistente")
+
+  ### PARCELAMENTO #####
+
+  resp= str(input("Qual opção o aluno marcou na prova? ")).upper()
+
+if resp == "A":
+    print("Resposta incorreta")
+
+elif resp == 'B':
+    print("Resposta Certa")
+
+elif resp == 'C':
+    print("Resposta Incorreta")
+
+elif resp == 'D':
+    print("Resposta Incorreta")
+
+elif resp != "A, B, C, D":
+    print("Resposta Inexistente")
+
+  ##### RESPOTA CERTA OU ERRADA #####
