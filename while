@@ -1,0 +1,104 @@
+opcao= 0
+contadorPessoa= 0
+somaAltura= 0 
+somaIdades= 0
+
+while opcao != 3:
+    print("1-CADASTRAR PESSOA ")
+    print("2- MÉDIA PARCIAIS DE ALTURA E IDADE ")
+    print("3-SAIR ")
+    opcao= int(input("Digite a opção: "))
+
+    if opcao ==1:
+        altura= float(input("DIgite a altura da pessoa em metros: "))
+        idade= int(input("Digite a idade da pessoa: "))
+        somaIdades = somaIdades+ idade
+        somaAltura= somaAltura + altura
+        contadorPessoa= contadorPessoa + 1 
+
+    elif opcao== 2:
+        mediaAltura= somaAltura / contadorPessoa
+        mediaIdades= somaIdades / contadorPessoa
+
+        print("A média de altura é ", mediaAltura, "metros", "e a média de idade é ", mediaIdades, "anos")
+    
+    elif opcao == 3:
+        print("Até mais!!")
+        mediaAltura= somaAltura / contadorPessoa
+        mediaIdades= somaIdades / contadorPessoa
+
+        print("A média de altura é ", mediaAltura, "metros", "e a média de idade é ", mediaIdades, "anos")
+
+    else:
+        print("Opção inválida")
+
+##################
+
+opcao = 0
+saldo= float(input("Qual o saldo que você possui em sua conta? "))
+
+while opcao !=4:
+
+    print("1- SACAR ")
+    print("2- Depositar ")
+    print("3- Mostrar saldo em tela ")
+    print("4- Sair")
+
+    opcao= int(input("Digite a opção: "))
+
+    if opcao== 1:
+        saque= float(input("Quanto você deseja sacar? "))
+        saldo= saldo - saque
+
+    elif opcao== 2:
+        deposito= int(input("Quanto você deseja depositar?"))
+        saldo = saldo + deposito
+
+    elif opcao == 3:
+        print("Seu saldo é R$", saldo)
+
+    elif opcao == 4:
+        print("Até mais!!")
+
+    else:
+        print("Opção inválida")
+
+##############
+
+contador_10= 0
+
+while True: 
+    num= int(input("Digite um número: "))
+    if num == 10:
+        contador_10 +=1
+        
+
+    elif num == 0:
+        print("Até mais")
+        print("A quantidade de vezes que o número 10 foi digitado é de:", contador_10)
+###########
+
+somaIdade= 0
+contMaiorIdade= 0
+percentIdade= 0
+contador= 1
+
+while contador <= 7 :
+    idade= int(input("Digite a idade da pessoa: "))
+
+    somaIdade += idade
+
+    if idade > 18:
+        contMaiorIdade += 1
+
+    if 10 <= idade <= 30: 
+        percentIdade += 1
+
+    contador += 1
+
+mediaIdades= somaIdade / 7
+porcentagem= (percentIdade / 7) * 100
+
+print("A média das idades é de ", mediaIdades, "anos")
+print("A quantidade de pessoas que são maiores de idade:", contMaiorIdade)
+print("A porcentagem de pessoas que tem entre 10 e 30 anos é de ", porcentagem, "%")
